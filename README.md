@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Consumo de Água
 
 App de controle de consumo de água, mantendo a mesma estrutura do projeto anterior.
@@ -39,3 +40,6 @@ flutter run
 
 - O `assets/icon.png` usado na Splash precisa existir e estar declarado no `pubspec.yaml`.
 # Consumo_De_Agua_Flutter
+=======
+# Caminhadas_Calorias_Flutter
+>>>>>>> 6b0b28b (Atualiza README)

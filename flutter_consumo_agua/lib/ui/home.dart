@@ -2,7 +2,7 @@ import 'dart:convert';
 
 import 'package:flutter/material.dart';
 
-import '../models/caminhadas.dart';
+import '../models/consumo.dart';
 import '../root/file.dart';
 
 class Home extends StatefulWidget {
@@ -72,8 +72,10 @@ class _HomeState extends State<Home> {
   }
 
   double _totalHoje() {
-    return _registrosDoDia()
-        .fold(0, (total, registro) => total + registro.quantidadeEmMl);
+    return _registrosDoDia().fold(
+      0,
+      (total, registro) => total + registro.quantidadeEmMl,
+    );
   }
 
   double _metaHoje() {
@@ -258,12 +260,16 @@ class _HomeState extends State<Home> {
             ),
             TextField(
               decoration: const InputDecoration(hintText: "Quantidade (ml)"),
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
+              keyboardType: const TextInputType.numberWithOptions(
+                decimal: true,
+              ),
               onChanged: (value) => quantidadeEmMl = value,
             ),
             TextField(
               decoration: const InputDecoration(hintText: "Peso atual (kg)"),
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
+              keyboardType: const TextInputType.numberWithOptions(
+                decimal: true,
+              ),
               onChanged: (value) => pesoAtualKg = value,
             ),
           ],
@@ -310,13 +316,17 @@ class _HomeState extends State<Home> {
             TextField(
               controller: TextEditingController(text: quantidadeEmMl),
               decoration: const InputDecoration(hintText: "Quantidade (ml)"),
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
+              keyboardType: const TextInputType.numberWithOptions(
+                decimal: true,
+              ),
               onChanged: (value) => quantidadeEmMl = value,
             ),
             TextField(
               controller: TextEditingController(text: pesoAtualKg),
               decoration: const InputDecoration(hintText: "Peso atual (kg)"),
-              keyboardType: const TextInputType.numberWithOptions(decimal: true),
+              keyboardType: const TextInputType.numberWithOptions(
+                decimal: true,
+              ),
               onChanged: (value) => pesoAtualKg = value,
             ),
           ],
