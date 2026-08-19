@@ -12,7 +12,7 @@ lib/
       colors.dart
       theme.dart
   models/
-    caminhadas.dart
+    consumo.dart
   root/
     file.dart
 ```
