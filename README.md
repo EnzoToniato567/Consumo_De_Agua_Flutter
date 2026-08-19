@@ -1,6 +1,6 @@
 # Consumo de Água
 
-App de controle de consumo de água, mantendo a mesma estrutura do projeto anterior.
+App de controle de consumo de água.
 
 ```text
 lib/
