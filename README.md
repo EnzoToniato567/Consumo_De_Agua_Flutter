@@ -2,6 +2,17 @@
 
 App de controle de consumo de água.
 
+## Screenshots
+
+### Splash
+
+![Screenshot da Splash](./flutter_consumo_agua/assets/splash.png)
+
+### Home
+
+![Screenshot da Home](./flutter_consumo_agua/assets/home.png)
+
+
 ```text
 lib/
   main.dart
